@@ -1,4 +1,8 @@
 #include <string>
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
 
 #ifndef INHERITANCE_LAB_EMPLOYEE_H
 #define INHERITANCE_LAB_EMPLOYEE_H
@@ -7,17 +11,14 @@ using namespace std;
 
 class Employee {
 public:
-    //Default constructor
-
-
-    //Constructor with variables
-
-
-    //Mutator functions
-
-    //Accessor functions
-
-    //printInfo function
+    Employee();
+    Employee(string Name, double Rate);
+    void setName(string Name);
+    void setPayRate(double Rate);
+    string getName();
+    double getPayRate();
+    double getNetPay(int Hours);
+    void printInfo(int Hours);
 
 private:
     string name;
@@ -26,3 +27,4 @@ private:
 
 
 #endif //INHERITANCE_LAB_EMPLOYEE_H
+
