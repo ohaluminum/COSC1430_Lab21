@@ -47,8 +47,8 @@ double Manager::getNetPay(int hoursWorked)
 void Manager::printInfo(int hoursWorked) 
 {
 	cout << "Manager's name: " << getName() << endl;
-	cout << "Salaried: " << salaried << endl;
-	cout << "Net Pay(weekly) :" << getNetPay(hoursWorked) << fixed << setprecision(2) << endl;
+	cout << "Salaried: " << boolalpha << salaried << endl;
+	cout << "Net Pay (weekly): $" << fixed << setprecision(2) << getNetPay(hoursWorked)  << endl;
 }
 
 

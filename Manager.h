@@ -1,5 +1,6 @@
 #include "Employee.h"
 
+
 #ifndef INHERITANCE_LAB_MANAGER_H
 #define INHERITANCE_LAB_MANAGER_H
 
@@ -11,8 +12,8 @@ public:
     Manager();
     Manager(string Name, double Rate, bool isPay);
     bool isSalaried();
-    double getNetPay(int hoursWorked);
-    void printInfo(int hoursWorked);
+    double getNetPay(int hoursWorked) override;
+    void printInfo(int hoursWorked) override;
 
 private:
     bool salaried;

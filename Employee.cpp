@@ -54,7 +54,7 @@ double Employee::getNetPay(int Hours)
 void Employee::printInfo(int Hours) 
 {
 	cout << "Employee's name: " << name << endl;
-	cout << "Net Pay(weekly): $" << getNetPay(Hours) << fixed << setprecision(2) << endl;
+	cout << "Net Pay (weekly): $" << fixed << setprecision(2) << getNetPay(Hours)  << endl;
 }
 
 

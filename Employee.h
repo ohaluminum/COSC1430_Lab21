@@ -17,8 +17,8 @@ public:
     void setPayRate(double Rate);
     string getName();
     double getPayRate();
-    double getNetPay(int Hours);
-    void printInfo(int Hours);
+    virtual double getNetPay(int Hours);
+    virtual void printInfo(int Hours);
 
 private:
     string name;

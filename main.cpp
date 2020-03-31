@@ -28,5 +28,4 @@ int main() {
     employee3->setName("Ron Swanson");
     employee3->setPayRate(50000);
     employee3->printInfo(40);
-
 }
