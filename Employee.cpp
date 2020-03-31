@@ -43,7 +43,7 @@ double Employee::getPayRate()
  */
 double Employee::getNetPay(int Hours)
 {
-	return (getPayRate() * Hours);
+	return (payRate * Hours);
 }
 
 /*
@@ -53,7 +53,7 @@ double Employee::getNetPay(int Hours)
  */
 void Employee::printInfo(int Hours) 
 {
-	cout << "Employee's name: " << getName() << endl;
+	cout << "Employee's name: " << name << endl;
 	cout << "Net Pay(weekly): $" << getNetPay(Hours) << fixed << setprecision(2) << endl;
 }
 

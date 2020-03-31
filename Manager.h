@@ -1,18 +1,15 @@
-// include header
+#include "Employee.h"
 
 #ifndef INHERITANCE_LAB_MANAGER_H
 #define INHERITANCE_LAB_MANAGER_H
 
 using namespace std;
 
-class Manager : //inherits from Employee
+class Manager : public Employee
 {
 public:
-
-    //default constructor
-
-    //constructor with parameters 
-
+    Manager();
+    Manager(string Name, double Rate, bool isPay);
     bool isSalaried();
     double getNetPay(int hoursWorked);
     void printInfo(int hoursWorked);
@@ -23,4 +20,5 @@ private:
 
 
 #endif //INHERITANCE_LAB_MANAGER_H
+
 
